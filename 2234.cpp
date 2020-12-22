@@ -79,7 +79,9 @@ int main(){
     cin.tie(NULL);
     cout.tie(NULL);
 
-    /* code here */
+    int h, p;
+    cin >> h >> p;
+    printf("%.2lf\n", (double)h/p);
 
     return 0;
 }
