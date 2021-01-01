@@ -4,7 +4,9 @@
 // #include <time.h>
 // #include <stdlib.h>
 // #include <string.h>
- 
+
+// type_t não utilizado **************** USAR TYPE_T NAS MACROS
+#define type_t int
 #define I int
 #define UI unsigned int
 #define L long int
@@ -27,7 +29,7 @@
 #define WhatsThat 0
 using namespace std;
  
-// --------------------------------------------------------
+// ----------------------------------------------------------------------
  
 // Notas
 // - W(x) imprime em vermelho
@@ -38,7 +40,7 @@ using namespace std;
 // - time ./a.out (exibe o tempo de execução)
 // - ./a.out < input.txt > output.txt
  
-// --------------------------------------------------------
+// ----------------------------------------------------------------------
  
 // Funções Úteis
 // - str.size() (não funciona com char[])
@@ -49,20 +51,26 @@ using namespace std;
 // - getline(cin, str, delimiter) (ler str com delimitador)
 // - min ou max({a,b,c,d,...});
  
-// --------------------------------------------------------
+// ----------------------------------------------------------------------
  
 // Pendente
-// int ehPrimo(int x){
+// int prime(int x){
 //     FOR(i,2,x) if(x%i == 0) return 0;
 //     return 1;
 // }
  
-// MDC - utiliza algoritmo de euclides
+// MDC - utiliza algoritmo de euclides - funcional
 // int gcd(int a, int b){ 
 //     return (!a) ? b : gcd(b % a, a);
 // }
+
+// FAT - fatorial clássico - não eficiente (recursão bem daora tho)
+// ULL fat(ULL n){
+//     if(n == 0 || n == 1) return 1;
+//     return n * fat(n-1);
+// } 
  
-// --------------------------------------------------------
+// ----------------------------------------------------------------------
  
 // InfoDump
 // - INT [-10e9 ; 10e9]
@@ -70,11 +78,15 @@ using namespace std;
 // - 10e8 op ~ 1 seg
 // - '\n' é mais rápido que endl
  
-// OwO - OwO - OwO -- OwO --- OwO ----- OwO -------- OwO //
- 
+// OwO - OwO - OwO -- OwO --- OwO ----- OwO -------- OwO ------------- OwO //
+
+// Sobre sync_with_stdio
+// http://www.cplusplus.com/reference/ios/ios_base/sync_with_stdio/
+// https://stackoverflow.com/questions/896654/cout-or-printf-which-of-the-two-has-a-faster-execution-speed-c#:~:text=In%20practical%20terms%20I%20have,fair%20to%20compare%20execution%20times.
+
 int main(){
  
-    ios_base::sync_with_stdio(false);
+    ios_base::sync_with_stdio(false); 
     cin.tie(NULL);
     cout.tie(NULL);
 
