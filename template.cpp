@@ -57,17 +57,16 @@ using namespace std;
 //     return 1;
 // }
  
-// int gcd(int x, int y){
-//     for(int i=max(x,y); i>1; i--){
-//         if(!(x%i) && !(y%i)) return i;
-//     } return 1;
+// MDC - utiliza algoritmo de euclides
+// int gcd(int a, int b){ 
+//     return (!a) ? b : gcd(b % a, a);
 // }
  
 // --------------------------------------------------------
  
 // InfoDump
-// - INT -10e9 -> 10e9
-// - LL -10e18 -> 10e18
+// - INT [-10e9 ; 10e9]
+// - LL [-10e18 ; 10e18]
 // - 10e8 op ~ 1 seg
 // - '\n' é mais rápido que endl
  
@@ -79,7 +78,7 @@ int main(){
     cin.tie(NULL);
     cout.tie(NULL);
 
-    /* code here */
-
+    /* CODE HERE */
+ 
     return 0;
 }
