@@ -6,7 +6,8 @@
 // #include <string.h>
 
 // type_t não utilizado **************** USAR TYPE_T NAS MACROS
-#define type_t int
+
+// Tipos primitivos
 #define I int
 #define UI unsigned int
 #define L long int
@@ -18,9 +19,18 @@
 #define S string
 #define C char
 #define UC unsigned char
+
+// Estruturas de dados
+#define VI vector<int>
+#define PB push_back
+#define MP make_pair<int, int> /// erro aqui
+#define II pair<int,int>
+#define SI pair<string,int>
+#define MAP map<string,int>
+
 #define P 1000009
 #define M 1000007
-#define dec greater<LL>() // arr decres
+#define dec greater<LL>() // array decrescente
 #define ALL(x) (x).begin(), (x).end()
 #define FOR(i,value,n) for(LL i=value; i<n; i++)
 #define FLOAT(x,n) fixed << setprecision(n) << (x)
@@ -35,6 +45,10 @@ using namespace std;
 // - W(x) imprime em vermelho
 // - ALL(x) define começo e fim
 // - dec serve para arr decrescente
+// - vector<II> v; declaracao de um vetor de pares
+// - v.PB(MP(1,0)); criacao de um par 
+// - MAP mapa;
+// - mapa[chave] = valor; no caso chave = string valor = int
  
 // Comandos Úteis
 // - time ./a.out (exibe o tempo de execução)
