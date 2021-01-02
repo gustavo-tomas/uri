@@ -78,12 +78,20 @@ using namespace std;
 //     return (!a) ? b : gcd(b % a, a);
 // }
 
-// FAT - fatorial clássico - não eficiente (recursão bem daora tho)
+// fatorial clássico - não eficiente (recursão bem daora tho)
 // ULL fat(ULL n){
 //     if(n == 0 || n == 1) return 1;
 //     return n * fat(n-1);
 // } 
  
+// https://stackoverflow.com/questions/22746429/c-decimal-to-binary-converting/22746526
+// conversao de decimal pra binario
+// string toBinary(int n){
+//     string r;
+//     while(n != 0){ r = (n % 2 == 0 ? "0" : "1") + r; n /= 2;}
+//     return r;
+// }
+
 // ----------------------------------------------------------------------
  
 // InfoDump
