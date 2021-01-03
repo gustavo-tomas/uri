@@ -102,7 +102,7 @@ using namespace std;
  
 // OwO - OwO - OwO -- OwO --- OwO ----- OwO -------- OwO ------------- OwO //
 
-// Sobre sync_with_stdio
+// Sobre sync_with_stdio //
 // http://www.cplusplus.com/reference/ios/ios_base/sync_with_stdio/
 // https://stackoverflow.com/questions/896654/cout-or-printf-which-of-the-two-has-a-faster-execution-speed-c#:~:text=In%20practical%20terms%20I%20have,fair%20to%20compare%20execution%20times.
 
