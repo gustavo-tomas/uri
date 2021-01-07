@@ -67,9 +67,13 @@ using namespace std;
  
 // ----------------------------------------------------------------------
  
-// Pendente
+// primo - deve ta certo 
 // int prime(int x){
-//     FOR(i,2,x) if(x%i == 0) return 0;
+//     if(x == 1) return 0;
+//     if(x % 2 == 0) return (x == 2) ? 1 : 0;   
+//     for(int i=3; i<sqrt(x); i++){
+//         if(x % i == 0) return 0;
+//     }
 //     return 1;
 // }
  
