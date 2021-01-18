@@ -82,6 +82,11 @@ using namespace std;
 //     return (!a) ? b : gcd(b % a, a);
 // }
 
+// MMC - (a * b) / gcd(a,b)
+// int lcm(int a, int b){
+//     return (a*b)/gcd(a,b);
+// }
+
 // fatorial clássico - não eficiente (recursão bem daora tho)
 // ULL fat(ULL n){
 //     if(n == 0 || n == 1) return 1;
