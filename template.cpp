@@ -56,6 +56,7 @@ using namespace std;
 // - s.resize(size) (ajusta o tam da string)
 // - getline(cin, str, delimiter) (ler str com delimitador)
 // - min ou max({a,b,c,d,...});
+// - tolower(string) (decapitaliza uma string)
  
 // ----------------------------------------------------------------------
  
@@ -103,14 +104,6 @@ using namespace std;
 //     string r;
 //     while(n != 0){ r = (n % 2 == 0 ? "0" : "1") + r; n /= 2;}
 //     return r;
-// }
-
-// decapitaliza uma string
-// string tolower(string s){
-//     for(int i=0; i<s.size(); i++){
-//         if(s[i] >= 'A' && s[i] <= 'Z') s[i] += 32;
-//     }
-//     return s;
 // }
 
 // ----------------------------------------------------------------------
