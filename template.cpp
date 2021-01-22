@@ -5,34 +5,28 @@
 // #include <stdlib.h>
 // #include <string.h>
 
-// type_t não utilizado **************** USAR TYPE_T NAS MACROS
+// Mudar os tipos aqui
+typedef int type_t
+typedef string type_s
 
 // Tipos primitivos
-#define I int
 #define UI unsigned int
-#define L long int
 #define LL long long int 
 #define ULL unsigned long long int
-#define F float
-#define D double
 #define LD long double
-#define S string
-#define C char
 #define UC unsigned char
 
 // Estruturas de dados
-#define VI vector<int>
-#define PB push_back
-#define MP make_pair<int, int> /// erro aqui
-#define II pair<int,int>
-#define SI pair<string,int>
-#define MAP map<string,int>
+#define VEC vector<type_t>
+#define SET set<type_t>
+#define MAP map<type_s,type_t>
+#define array_type vector<int> // busca binaria
 
+// Outros
 #define P 1000009
 #define M 1000007
 #define dec greater<LL>() // array decrescente
 #define ALL(x) (x).begin(), (x).end()
-#define FOR(i,value,n) for(LL i=value; i<n; i++)
 #define FLOAT(x,n) fixed << setprecision(n) << (x)
 #define W(x) cerr << "\033[31m" << #x << " = " << x << "\033[0m" << "\n";
 #define OwO return 
@@ -45,8 +39,6 @@ using namespace std;
 // - W(x) imprime em vermelho
 // - ALL(x) define começo e fim
 // - dec serve para arr decrescente
-// - vector<II> v; declaracao de um vetor de pares
-// - v.PB(MP(1,0)); criacao de um par 
 // - MAP mapa;
 // - mapa[chave] = valor; no caso chave = string valor = int
  
@@ -94,7 +86,6 @@ using namespace std;
 // }
 
 // busca binaria - mudar array type para conveniencia
-// #define array_type vector<int>
 // int bin_search(array_type v, int val){
 //     int l = 0, r = v.size()-1, mid=0, flag=0;
 //     while((l <= r) && !flag){
