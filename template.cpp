@@ -91,7 +91,20 @@ using namespace std;
 // ULL fat(ULL n){
 //     if(n == 0 || n == 1) return 1;
 //     return n * fat(n-1);
-// } 
+// }
+
+// busca binaria - mudar array type para conveniencia
+// #define array_type vector<int>
+// int bin_search(array_type v, int val){
+//     int l = 0, r = v.size()-1, mid=0, flag=0;
+//     while((l <= r) && !flag){
+//         mid = (r + l)/2;
+//         if(val < v[mid]) r = mid-1;
+//         else if(val > v[mid]) l = mid+1;
+//         else flag = 1;
+//     }
+//     return mid;
+// }
  
 // https://stackoverflow.com/questions/22746429/c-decimal-to-binary-converting/22746526
 // conversao de decimal pra binario
@@ -121,7 +134,8 @@ using namespace std;
 
 // Sobre sync_with_stdio
 // http://www.cplusplus.com/reference/ios/ios_base/sync_with_stdio/
-// https://stackoverflow.com/questions/896654/cout-or-printf-which-of-the-two-has-a-faster-execution-speed-c#:~:text=In%20practical%20terms%20I%20have,fair%20to%20compare%20execution%20times.
+// https://stackoverflow.com/questions/896654/cout-or-printf-which-
+// of-the-two-has-a-faster-execution-speed-c#:~:text=In%20practical%20terms%20I%20have,fair%20to%20compare%20execution%20times.
 
 int main(){
  
