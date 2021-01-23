@@ -57,6 +57,7 @@ using namespace std;
 // - getline(cin, str, delimiter) (ler str com delimitador)
 // - min ou max({a,b,c,d,...});
 // - tolower(string) (decapitaliza uma string)
+// - cout << setiosflags(ios::uppercase) (letra maiscula)
  
 // ----------------------------------------------------------------------
  
