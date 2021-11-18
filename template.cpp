@@ -5,9 +5,11 @@
 // #include <stdlib.h>
 // #include <string.h>
 
+using namespace std;
+
 // Mudar os tipos aqui
-typedef int type_t
-typedef string type_s
+typedef int type_t;
+typedef string type_s;
 
 // Tipos primitivos
 #define UI unsigned int
@@ -31,7 +33,6 @@ typedef string type_s
 #define W(x) cerr << "\033[31m" << #x << " = " << x << "\033[0m" << "\n";
 #define OwO return 
 #define WhatsThat 0
-using namespace std;
  
 // ----------------------------------------------------------------------
  
