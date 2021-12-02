@@ -50,6 +50,7 @@ typedef string type_s;
 // ----------------------------------------------------------------------
  
 // Funções Úteis
+// - stoull(str, 0, 2) converte string binaria para ull
 // - str.size() (não funciona com char[])
 // - sort(str.begin(),str.end()) sort(ALL(str))
 // - sort(arr,arr+size)
