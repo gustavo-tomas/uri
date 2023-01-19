@@ -63,18 +63,18 @@ typedef string type_s;
  
 // ----------------------------------------------------------------------
  
-// primo - deve ta certo 
-// int prime(int x){
-//     if(x == 1) return 0;
-//     if(x % 2 == 0) return (x == 2) ? 1 : 0;   
-//     for(int i=3; i<=sqrt(x); i++){
-//         if(x % i == 0) return 0;
+// primo rápido O(sqrt n) 
+// int prime(int x) {
+//     if (x <= 1) return 0;
+//     if (x % 2 == 0) return (x == 2) ? 1 : 0;   
+//     for (int i = 3; i * i <= x; i += 2) {
+//         if (x % i == 0) return 0;
 //     }
 //     return 1;
 // }
  
 // MDC - utiliza algoritmo de euclides - funcional
-// int gcd(int a, int b){ 
+// int gcd(int a, int b) { 
 //     return (!a) ? b : gcd(b % a, a);
 // }
 
@@ -102,6 +102,35 @@ typedef string type_s;
 //         }
 //     }
 //     return res;
+// }
+
+// Problema da mochila
+// int knapsack(int* weights, int* values, int n, int max_cap) {
+//     int m[n + 5][max_cap + 5];
+//     for (int j = 0; j <= max_cap; j++) m[0][j] = 0;
+//     for (int j = 1; j <= n; j++) m[j][0] = 0;
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 0; j <= max_cap; j++) {
+//             if (weights[i] > j)
+//                 m[i][j] = m[i-1][j];
+//             else           // unbounded: m[i][j-weights[i]] + values[i]
+//                 m[i][j] = max(m[i-1][j], m[i-1][j-weights[i]] + values[i]);
+//         }
+//     }
+//     return m[n][max_cap];
+// }
+
+// problema da barra
+// int cut_rod(int* prices, int n) {
+//     int r[n + 5];
+//     r[0] = 0;
+//     for (int j = 1; j <= n; j++) {
+//         int q = (int) -INFINITY;
+//         for (int i = 1; i <= j; i++)
+//             q = max(q, prices[i] + r[j - i]);
+//         r[j] = q;
+//     }
+//     return r[n];
 // }
 
 // https://www.geeksforgeeks.org/counting-sort/
